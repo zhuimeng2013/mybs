@@ -21,14 +21,16 @@
     height: 40px;
     vertical-align:middle;
     text-align: center;
-    background-color: #08c;
-    border:1px solid #dddddd;
-    color:#fff;
+    background-color: #e4e4e4;
+    border:1px solid #ddd;
+    color:#333;
 }
 .ui-table td{
     border:1px solid #dddddd;
     text-align: center;
-    line-height: 33px;
+    line-height: 21px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 .ui-hide{
     display: none;
