@@ -39,6 +39,7 @@
     height: 50px;
     line-height: 50px;
     width:420px;
+    margin-bottom: 14px;
 }
 .ui-form-content{
     padding-left: 4px;
@@ -53,4 +54,10 @@
 }
 .mod-login  .form-horizontal .controls {
     margin-left: 86px;
+}
+.mod-login .error-box{
+    padding-left: 84px;
+    height: 23px;
+    line-height: 23px;
+    color:#c00;
 }

@@ -58,4 +58,7 @@
 .mod-password-update .control-group{
     margin-bottom: 24px;
 }
+.mod-password-update .hide{
+    display: none;
+}
 
