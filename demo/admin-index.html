@@ -51,7 +51,7 @@
                </div>
                <div class="layout">
                    <div class="grid">
-                       <div class="member-filter">
+                       <div class="member-filter" id="member-filter">
                            <div class="header">
                                <form class="form-horizontal form-member-search" method="post">
                                    <div class="control-group">
@@ -96,13 +96,25 @@
                                             <td>广州汇美服装有限公司</td>
                                             <td>广州-石基仓</td>
                                             <td>
-                                                <a href="./order-detail.html">修改</a>
-                                                <a href="./order-detail.html">查看</a>
-                                                <a href="./order-detail.html">删除</a>
-                                                <a href="./order-detail.html">密码初始化</a>
+                                                <a href="./admin-update.html" target="_blank">修改</a>
+                                                <a href="./admin-view.html" target="_blank">查看</a>
+                                                <a class="action-del" target="_self" data-id="13444" href="#" data-mid="1">删除</a>
+                                                <a href="#modal-pwd-init" target="_self" class="action-pwd-init" data-mid="13444">密码初始化</a>
                                             </td>
                                         </tr>
-
+                                        <tr>
+                                            <td>方建华</td>
+                                            <td>jianghua.fa@126.com</td>
+                                            <td>2013-08-03 14:40:20</td>
+                                            <td>广州汇美服装有限公司</td>
+                                            <td>广州-石基仓</td>
+                                            <td>
+                                                <a href="./admin-update.html" target="_blank">修改</a>
+                                                <a href="./admin-view.html" target="_blank">查看</a>
+                                                <a class="action-del" target="_self" data-id="13444" href="#" data-mid="2">删除</a>
+                                                <a href="#modal-pwd-init" target="_self" class="action-pwd-init" data-mid="13444">密码初始化</a>
+                                            </td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -139,11 +151,38 @@
 
 
 
+
           </div>
          <!--content end-->
 
      </div>
-    <script src="../static/plugins/beechart/flash.js"></script>
-    <script src="../static/js/pages/order.js"></script>
+
+     <div id="modal-del" data-action="" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+             <h3>您确定要删除此记录吗？</h3>
+         </div>
+         <div class="modal-body">
+             <p>此记录含有资金变动，会影响您的金额统计，请慎重考虑。删除后，您可在回收站还原，或永久删除。</p>
+         </div>
+         <div class="modal-footer">
+             <a href="#" class="btn btn-cancle">取消</a>
+             <a href="#" class="btn btn-primary btn-comfirm">确认</a>
+         </div>
+     </div>
+     <div id="modal-pwd-init" data-action="" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+             <h3>您确定要进行密码初始化吗？</h3>
+         </div>
+         <div class="modal-body">
+             <p>此动作会设置为初始密码，请慎重。</p>
+         </div>
+         <div class="modal-footer">
+             <a href="#" class="btn btn-cancle">取消</a>
+             <a href="#" class="btn btn-primary btn-comfirm">确认</a>
+         </div>
+     </div>
+    <script src="../static/js/pages/admin/index.js"></script>
 </body>
 </html>
