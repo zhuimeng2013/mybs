@@ -1,48 +1,66 @@
-.order-filter{
+.data-container{
 
 }
-.order-filter .form-horizontal{
-    padding-top: 20px;
+
+.data-container .grid-main{
+    float: left;
+    width: 710px;
+    min-height: 400px;
+    padding-top: 22px;
 }
-.order-filter .form-horizontal .label-order-id{
-    width:78px;
+.data-container .grid-sub{
+    float: right;
+    width: 270px;
+    min-height: 400px;
 }
-.order-filter .form-horizontal  .controls{
-    margin-left: 78px;
+.mod-overview{
+    height: 122px;
+    overflow: hidden;
+    padding-left: 170px;
+    background: transparent url(../../img/pages/gaikuang.png) no-repeat 0px 0px;
+}
+.mod-overview .header{
+    font-size: 16px;
+    color: #9c9c9e;
+    padding-top: 30px;
+    height:30px;
+}
+.mod-overview .header span{
+    padding: 0px 4px;
+}
+.mod-overview table{
+    width:540px;
+}
+.mod-overview table .c1{
+    width: 190px;
+}
+.mod-overview table .c2{
+    width: 190px;
+}
+.mod-overview table em{
+    color:#ff7300;
+    font-style: normal;
 }
 
-.table-order-list th.oid{
-   width:110px;
+.mod-detail .header{
+    margin-top: 10px;
+    height: 48px;
+    color:#808080;
+    font-size: 12px;
+    width:710px;
+    line-height: 48px;
 }
-.table-order-list th.warehouse{
-    width: 108px;
+.mod-detail .header .title{
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0px;
+    padding-top: 4px;
 }
-.table-order-list th.people{
-   width: 50px;
+.mod-detail .header .action{
+    float: right;
 }
-.table-order-list th.name{
-    width: 150px;
-}
-.table-order-list th.phone{
-      width: 92px;
-}
-.table-order-list th.time{
-   width:110px;
-}
-.table-order-list th.posttime{
-   width: 110px;
-}
-.table-order-list th.state{
-   width: 100px;
-}
-.table-order-list th.action{
-    width: 50px;
-}
-
-.mod-no-result .no-result {
-    height: 100px;
-    line-height: 40px;
-    padding-top: 40px;
-    background: transparent url(../../img/pages/icon-no-result.png) no-repeat 320px 42px;
-    padding-left: 360px;
+.mod-detail .header .action .select-date{
+    margin-bottom: 0px;
+    width: 130px;
 }

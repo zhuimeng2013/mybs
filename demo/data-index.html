@@ -61,253 +61,74 @@
                        </div>
                    </div>
                </div>
+
                <div class="layout">
                    <div class="grid">
-                       <div class="order-filter">
-                           <div class="header">
-                               <form class="form-horizontal form-oreder-search" method="post">
-                                   <div class="control-group">
-                                       <label class="control-label label-order-id">订单号：</label>
-                                       <div class="controls">
-                                               <input type="text" value="" style="width:180px" class="" placeholder="请输入销售平台订单号"/>
-                                           <span class="help-inline" style="padding-left: 30px;">收货人姓名：</span>
-                                           <input type="text" value="" style="width:120px" class="" placeholder="请输入收货人姓名"/>
-                                           <span class="help-inline">收货人手机：</span>
-                                           <input type="text" value="" style="width:120px" class="" placeholder="请输入收货人手机"/>
-                                           <span class="help-inline">订单状态：</span>
-                                           <select class="select-sku" style="width:120px;">
-                                               <option>排件异常</option>
-                                           </select>
-                                       </div>
-                                   </div>
-                                   <div class="control-group">
-                                       <label class="control-label label-order-id">发货时间：</label>
-                                       <div class="controls">
-                                           <div class="input-append inline">
-                                               <input size="16" type="text" id="datepicker" value="2013-10-12" readonly="" style="width:74px" class="hasDatepicker"><span class="ui-datepicker-append">yyyy-mm-dd</span>
-                                               <span class="add-on"><i class="icon-calendar"></i></span>
-                                           </div>
-                                           <span class="help-inline">-</span>
-                                           <div class="input-append inline">
-                                               <input size="16" type="text" value="" readonly="" style="width:74px">
-                                               <span class="add-on"><i class="icon-calendar"></i></span>
-                                           </div>
-                                           <span class="help-inline">运单号：</span>
-                                           <input type="text" value="" style="width:120px" class="" placeholder="请输入运单号"/>
-                                           <span class="help-inline" style="padding-left: 34px;">承运商：</span>
-                                           <select class="select-sku" style="width:134px;">
-                                               <option>所有承运商</option>
-                                           </select>
-                                           <button type="submit" class="btn btn-primary">查看</button>
-                                           <a class="btn btn-success" href="#">导出</a>
-                                       </div>
-                                   </div>
+                       <div class="data-container">
+                             <div class="grid-main">
+                                 <div class="mod-overview">
+                                     <div class="header">
+                                         2013-6-1<span>至</span>2013-9-1
+                                     </div>
+                                     <div class="content">
+                                        <table>
+                                            <colgroup>
+                                                <col class="c1">
+                                                <col class="c2">
+                                                <col class="c3">
+                                            </colgroup>
 
-                               </form>
-                           </div>
-                            <div class="content">
-                                <table class="ui-table table-order-list">
-                                    <thead>
-                                    <tr>
-                                        <th class="oid">订单号</th>
-                                        <th class="warehouse">仓库</th>
-                                        <th class="people">收货人</th>
-                                        <th class="name">名称</th>
-                                        <th class="phone">手机</th>
-                                        <th class="time">接单时间</th>
-                                        <th class="posttime">发货时间</th>
-                                        <th class="state">订单状态</th>
-                                        <th class="action">操作</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>130606394477</td>
-                                            <td>广州-石基仓</td>
-                                            <td>王云</td>
-                                            <td>广州市汇美服装有限公司</td>
-                                            <td>18382558667</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>待审核</td>
-                                            <td><a href="./order-detail.html">详情</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>130606394477</td>
-                                            <td>广州-石基仓</td>
-                                            <td>王云</td>
-                                            <td>广州市汇美服装有限公司广州市汇美服装有限公司</td>
-                                            <td>18382558667</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>仓库已接单</td>
-                                            <td><a href="">详情</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>130606394477</td>
-                                            <td>广州-石基仓</td>
-                                            <td>王云</td>
-                                            <td>广州市汇美服装有限公司</td>
-                                            <td>18382558667</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>仓库接单失败</td>
-                                            <td><a href="">详情</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>130606394477</td>
-                                            <td>广州-石基仓</td>
-                                            <td>王云</td>
-                                            <td>广州市汇美服装有限公司</td>
-                                            <td>18382558667</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>订单生产中</td>
-                                            <td><a href="">详情</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>130606394477</td>
-                                            <td>广州-石基仓</td>
-                                            <td>王云</td>
-                                            <td>广州市汇美服装有限公司</td>
-                                            <td>18382558667</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>仓库已发货</td>
-                                            <td><a href="">详情</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>130606394477</td>
-                                            <td>广州-石基仓</td>
-                                            <td>王云</td>
-                                            <td>广州市汇美服装有限公司</td>
-                                            <td>18382558667</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>订单取消</td>
-                                            <td><a href="">详情</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>130606394477</td>
-                                            <td>广州-石基仓</td>
-                                            <td>王云</td>
-                                            <td>广州市汇美服装有限公司</td>
-                                            <td>18382558667</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>快递已揽货</td>
-                                            <td><a href="">详情</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>130606394477</td>
-                                            <td>广州-石基仓</td>
-                                            <td>王云</td>
-                                            <td>广州市汇美服装有限公司</td>
-                                            <td>18382558667</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>派件中</td>
-                                            <td><a href="">详情</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>130606394477</td>
-                                            <td>广州-石基仓</td>
-                                            <td>王云</td>
-                                            <td>广州市汇美服装有限公司</td>
-                                            <td>18382558667</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>已签收</td>
-                                            <td><a href="">详情</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>130606394477</td>
-                                            <td>广州-石基仓</td>
-                                            <td>王云</td>
-                                            <td>广州市汇美服装有限公司</td>
-                                            <td>18382558667</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>派件异常</td>
-                                            <td><a href="">详情</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>130606394477</td>
-                                            <td>广州-石基仓</td>
-                                            <td>王云</td>
-                                            <td>广州市汇美服装有限公司</td>
-                                            <td>18382558667</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>中转中</td>
-                                            <td><a href="">详情</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>130606394477</td>
-                                            <td>广州-石基仓</td>
-                                            <td>王云</td>
-                                            <td>广州市汇美服装有限公司</td>
-                                            <td>18382558667</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>派件异常</td>
-                                            <td><a href="">详情</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>130606394477</td>
-                                            <td>广州-石基仓</td>
-                                            <td>王云</td>
-                                            <td>广州市汇美服装有限公司</td>
-                                            <td>18382558667</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>已签收</td>
-                                            <td><a href="">详情</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>130606394477</td>
-                                            <td>广州-石基仓</td>
-                                            <td>王云</td>
-                                            <td>广州市汇美服装有限公司</td>
-                                            <td>18382558667</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>2013-06-06 10:37</td>
-                                            <td>派件异常</td>
-                                            <td><a href="">详情</a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                             <tr>
+                                                 <td>总订单量(单)：<em>343,434</em></td>
+                                                 <td>销售额(元)：<em>1,343,434</em></td>
+                                                 <td>总订单量(单)：<em>1343,434</em></td>
+                                             </tr>
+                                             <tr>
+                                                 <td>总订单量(单)：<em>343,434</em></td>
+                                                 <td>总订单量(单)：<em>343,434</em></td>
+                                                 <td>&nbsp;</td>
+                                             </tr>
+                                         </table>
+                                     </div>
+                                 </div>
+
+                                 <div class="mod-detail">
+                                     <div class="header">
+                                        <h3 class="title">数据详情</h3>
+                                        <div class="action">
+                                           <span>2013-05-01至2013-05-31</span>
+                                            <button class="btn btn-primary" type="button">最近7天</button>
+                                            <button class="btn btn-primary" type="button">最近30天</button>
+                                            <select class="select-date">
+                                                <option>2013-06</option>
+                                                <option>2013-07</option>
+                                                <option>2013-08</option>
+                                            </select>
+                                        </div>
+                                     </div>
+                                     <div class="content">
+                                         <table>
+                                             <thead>
+                                                <tr>
+                                                    <th>&nbsp;</th>
+                                                    <th class="t2">近1天</th>
+                                                    <th class="t3">2013-05</th>
+                                                    <th class="t4">与上个月/2013-04对比</th>
+                                                </tr>
+                                             </thead>
+                                         </table>
+                                     </div>
+                                 </div>
+                             </div>
+                            <div class="grid-sub">
+
                             </div>
                        </div>
                    </div>
                </div>
-               <!--table end-->
 
-               <!--page start-->
-               <div class="layout">
-                   <div class="grid">
-                       <div class="mod-pages">
-                           <div class="content">
 
-                               <div class="pagination pagination-large pagination-right">
-                                   <ul>
-                                       <li class="disabled"><a href="javascrit:void(0)" target="_self">«</a></li>
-                                       <li><a href="javascrit:void(0)" target="_self">«</a></li>
-                                       <li class="active"><a href="javascrit:void(0)" target="_self">1</a></li>
-                                       <li><a href="#">1</a></li>
-                                       <li><a href="#">2</a></li>
-                                       <li><a href="#">3</a></li>
-                                       <li><a href="#">4</a></li>
-                                       <li><a href="#">5</a></li>
-                                       <li><a href="#">»</a></li>
-                                       <li class="disabled"><a href="javascrit:void(0)" target="_self">»</a></li>
-                                   </ul>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <!--page end-->
+
 
 
 

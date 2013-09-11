@@ -19,16 +19,17 @@ a:focus {
 }
 
 .mod-masthead{
-    height: 80px;
+    height: 66px;
     overflow:hidden;
     position: relative;
+    margin-top: 8px;
 }
 .mod-masthead span.admin{
     position:absolute;
     display: block;
     height:42px;
     left:222px;
-    top:18px;
+    top:5px;
     border-left:1px solid #000;
     padding-left: 18px;
     font-size: 32px;
