@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>SKU销售量省份分布-图形</title>
+    <title>SKU销售量省份分布-列表</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/lib/lib.css">
@@ -12,7 +12,9 @@
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/nav.css">
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/ui.css">
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/data-sku-search.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/plugins/jquery-ui-1.10.3.custom/css/jquery-ui.css">
     <script src="../static/js/lib/lib.js"></script>
+    <script src="../static/plugins/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script>
     <base target="_self"/>
 </head>
 <body>
@@ -103,19 +105,250 @@
                                            <span class="help-inline" style="padding-left: 0px;">展现方式：</span>
                                            <select class="select-sku" style="width: 60px;">
                                                <option>图形</option>
-                                               <option>列表</option>
+                                               <option selected>列表</option>
                                            </select>
                                            <button type="submit" class="btn btn-primary" style="margin-left: 2px;">查询</button>
                                            <a class="btn btn-success" href="#">导出</a>
 
                                        </div>
                                    </div>
-
-
                                </form>
                            </div>
                             <div class="content">
-                                <iframe frameborder="0" height="700" marginheight="0" marginwidth="0" scrolling="no" width="990" src="./sku-map.html"></iframe>
+                                <div class="layout">
+                                    <div class="grid">
+                                        <div class="mod-sku">
+                                            <table class="ui-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="date">日期</th>
+                                                        <th class="">安徽</th>
+                                                        <th class="">浙江</th>
+                                                        <th class="">上海</th>
+                                                        <th class="">江西</th>
+                                                        <th class="">江苏</th>
+                                                        <th class="">广东</th>
+                                                        <th class="">北京</th>
+                                                        <th class="">湖南</th>
+                                                        <th class="">福建</th>
+                                                        <th class="">湖北</th>
+                                                        <th class="">...</th>
+                                                        <th class="total">合计(单)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2013-9-22</td>
+                                                        <td>300</td>
+                                                        <td>300</td>
+                                                        <td>4234</td>
+                                                        <td>34234</td>
+                                                        <td>3443</td>
+                                                        <td>455</td>
+                                                        <td>5555</td>
+                                                        <td>2321</td>
+                                                        <td>3434</td>
+                                                        <td>3434</td>
+                                                        <td>...</td>
+                                                        <td>20099</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2013-9-22</td>
+                                                        <td>300</td>
+                                                        <td>300</td>
+                                                        <td>4234</td>
+                                                        <td>34234</td>
+                                                        <td>3443</td>
+                                                        <td>455</td>
+                                                        <td>5555</td>
+                                                        <td>2321</td>
+                                                        <td>3434</td>
+                                                        <td>3434</td>
+                                                        <td>...</td>
+                                                        <td>20099</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2013-9-22</td>
+                                                        <td>300</td>
+                                                        <td>300</td>
+                                                        <td>4234</td>
+                                                        <td>34234</td>
+                                                        <td>3443</td>
+                                                        <td>455</td>
+                                                        <td>5555</td>
+                                                        <td>2321</td>
+                                                        <td>3434</td>
+                                                        <td>3434</td>
+                                                        <td>...</td>
+                                                        <td>20099</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2013-9-22</td>
+                                                        <td>300</td>
+                                                        <td>300</td>
+                                                        <td>4234</td>
+                                                        <td>34234</td>
+                                                        <td>3443</td>
+                                                        <td>455</td>
+                                                        <td>5555</td>
+                                                        <td>2321</td>
+                                                        <td>3434</td>
+                                                        <td>3434</td>
+                                                        <td>...</td>
+                                                        <td>20099</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2013-9-22</td>
+                                                        <td>300</td>
+                                                        <td>300</td>
+                                                        <td>4234</td>
+                                                        <td>34234</td>
+                                                        <td>3443</td>
+                                                        <td>455</td>
+                                                        <td>5555</td>
+                                                        <td>2321</td>
+                                                        <td>3434</td>
+                                                        <td>3434</td>
+                                                        <td>...</td>
+                                                        <td>20099</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2013-9-22</td>
+                                                        <td>300</td>
+                                                        <td>300</td>
+                                                        <td>4234</td>
+                                                        <td>34234</td>
+                                                        <td>3443</td>
+                                                        <td>455</td>
+                                                        <td>5555</td>
+                                                        <td>2321</td>
+                                                        <td>3434</td>
+                                                        <td>3434</td>
+                                                        <td>...</td>
+                                                        <td>20099</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2013-9-22</td>
+                                                        <td>300</td>
+                                                        <td>300</td>
+                                                        <td>4234</td>
+                                                        <td>34234</td>
+                                                        <td>3443</td>
+                                                        <td>455</td>
+                                                        <td>5555</td>
+                                                        <td>2321</td>
+                                                        <td>3434</td>
+                                                        <td>3434</td>
+                                                        <td>...</td>
+                                                        <td>20099</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2013-9-22</td>
+                                                        <td>300</td>
+                                                        <td>300</td>
+                                                        <td>4234</td>
+                                                        <td>34234</td>
+                                                        <td>3443</td>
+                                                        <td>455</td>
+                                                        <td>5555</td>
+                                                        <td>2321</td>
+                                                        <td>3434</td>
+                                                        <td>3434</td>
+                                                        <td>...</td>
+                                                        <td>20099</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2013-9-22</td>
+                                                        <td>300</td>
+                                                        <td>300</td>
+                                                        <td>4234</td>
+                                                        <td>34234</td>
+                                                        <td>3443</td>
+                                                        <td>455</td>
+                                                        <td>5555</td>
+                                                        <td>2321</td>
+                                                        <td>3434</td>
+                                                        <td>3434</td>
+                                                        <td>...</td>
+                                                        <td>20099</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2013-9-22</td>
+                                                        <td>300</td>
+                                                        <td>300</td>
+                                                        <td>4234</td>
+                                                        <td>34234</td>
+                                                        <td>3443</td>
+                                                        <td>455</td>
+                                                        <td>5555</td>
+                                                        <td>2321</td>
+                                                        <td>3434</td>
+                                                        <td>3434</td>
+                                                        <td>...</td>
+                                                        <td>20099</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2013-9-22</td>
+                                                        <td>300</td>
+                                                        <td>300</td>
+                                                        <td>4234</td>
+                                                        <td>34234</td>
+                                                        <td>3443</td>
+                                                        <td>455</td>
+                                                        <td>5555</td>
+                                                        <td>2321</td>
+                                                        <td>3434</td>
+                                                        <td>3434</td>
+                                                        <td>...</td>
+                                                        <td>20099</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2013-9-22</td>
+                                                        <td>300</td>
+                                                        <td>300</td>
+                                                        <td>4234</td>
+                                                        <td>34234</td>
+                                                        <td>3443</td>
+                                                        <td>455</td>
+                                                        <td>5555</td>
+                                                        <td>2321</td>
+                                                        <td>3434</td>
+                                                        <td>3434</td>
+                                                        <td>...</td>
+                                                        <td>20099</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--page start-->
+                                <div class="layout">
+                                    <div class="grid">
+                                        <div class="mod-pages">
+                                            <div class="content">
+
+                                                <div class="pagination pagination-large pagination-right">
+                                                    <ul>
+                                                        <li class="disabled"><a href="javascrit:void(0)" target="_self">«</a></li>
+                                                        <li><a href="javascrit:void(0)" target="_self">«</a></li>
+                                                        <li class="active"><a href="javascrit:void(0)" target="_self">1</a></li>
+                                                        <li><a href="#">1</a></li>
+                                                        <li><a href="#">2</a></li>
+                                                        <li><a href="#">3</a></li>
+                                                        <li><a href="#">4</a></li>
+                                                        <li><a href="#">5</a></li>
+                                                        <li><a href="#">»</a></li>
+                                                        <li class="disabled"><a href="javascrit:void(0)" target="_self">»</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--page end-->
+
                             </div>
                        </div>
                    </div>
@@ -140,7 +373,6 @@
           </div>
 
      </div>
-    <script src="../static/plugins/beechart/flash.js"></script>
     <script src="../static/js/pages/data.js"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>订单搜索零结果</title>
+    <title>SKU销售量省份分布-图形</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/lib/lib.css">
@@ -11,7 +11,7 @@
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/footer.css">
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/nav.css">
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/ui.css">
-    <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/order.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/data-sku-search.css">
     <link type="text/css" rel="stylesheet" media="all" href="../static/plugins/jquery-ui-1.10.3.custom/css/jquery-ui.css">
     <script src="../static/js/lib/lib.js"></script>
     <script src="../static/plugins/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script>
@@ -46,10 +46,10 @@
                                     <li class="">
                                         <a href="./index.html" target="_self">首页</a>
                                     </li>
-                                    <li class="active">
+                                    <li>
                                         <a href="./order-index.html" target="_self">我要查订单</a>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <a href="./data-index.html" target="_self">我要看数据</a>
                                     </li>
                                     <li>
@@ -64,29 +64,28 @@
                    </div>
                </div>
                <div class="layout">
+                    <div class="grid">
+                        <div class="mod-guide">
+                             <div class="header">
+                                 <ul class="breadcrumb">
+                                     <li><a href="./data-index.html">首页</a> <span class="divider">/</span></li>
+                                     <li><a href="./data-index.html">我要看数据</a> <span class="divider">/</span></li>
+                                     <li class="active">SKU销售量省份分布</li>
+                                 </ul>
+                             </div>
+                        </div>
+                    </div>
+               </div>
+               <div class="layout">
                    <div class="grid">
-                       <div class="order-filter">
+                       <div class="mod-order-source-filter">
                            <div class="header">
                                <form class="form-horizontal form-oreder-search" method="post">
                                    <div class="control-group">
-                                       <label class="control-label label-order-id">订单号：</label>
                                        <div class="controls">
-                                               <input type="text" value="" style="width:180px" class="" placeholder="请输入销售平台订单号"/>
-                                           <span class="help-inline" style="padding-left: 30px;">收货人姓名：</span>
-                                           <input type="text" value="" style="width:120px" class="" placeholder="请输入收货人姓名"/>
-                                           <span class="help-inline">收货人手机：</span>
-                                           <input type="text" value="" style="width:120px" class="" placeholder="请输入收货人手机"/>
-                                           <span class="help-inline">订单状态：</span>
-                                           <select class="select-sku" style="width:120px;">
-                                               <option>排件异常</option>
-                                           </select>
-                                       </div>
-                                   </div>
-                                   <div class="control-group">
-                                       <label class="control-label label-order-id">发货时间：</label>
-                                       <div class="controls">
+                                               <label class="help-inline">请选择日期：</label>
                                            <div class="input-append inline">
-                                               <input size="16" type="text" id="datepicker" value="2013-10-12" readonly="" style="width:74px" class="datepicker"><span class="ui-datepicker-append">yyyy-mm-dd</span>
+                                               <input size="16" type="text" value="2013-10-12" readonly="" style="width:74px" class="datepicker"><span class="ui-datepicker-append">yyyy-mm-dd</span>
                                                <span class="add-on"><i class="icon-calendar"></i></span>
                                            </div>
                                            <span class="help-inline">-</span>
@@ -94,47 +93,36 @@
                                                <input size="16" type="text" value="" readonly="" style="width:74px" class="datepicker">
                                                <span class="add-on"><i class="icon-calendar"></i></span>
                                            </div>
-                                           <span class="help-inline">运单号：</span>
-                                           <input type="text" value="" style="width:120px" class="" placeholder="请输入运单号"/>
-                                           <span class="help-inline" style="padding-left: 34px;">承运商：</span>
-                                           <select class="select-sku" style="width:134px;">
-                                               <option>所有承运商</option>
+                                           <span class="help-inline" style="padding-left: 0px;">请选择仓库：</span>
+                                           <select class="select-sku" style="width:100px;">
+                                               <option>请选择仓库</option>
                                            </select>
-                                           <button type="submit" class="btn btn-primary">查看</button>
+                                           <span class="help-inline" style="padding-left: 0px;">请选择SKU：</span>
+                                           <select class="select-sku" style="width:108px;">
+                                               <option>请选择SKU</option>
+                                           </select>
+
+                                           <span class="help-inline" style="padding-left: 0px;">展现方式：</span>
+                                           <select class="select-sku" style="width: 60px;">
+                                               <option>图形</option>
+                                               <option>列表</option>
+                                           </select>
+                                           <button type="submit" class="btn btn-primary" style="margin-left: 2px;">查询</button>
                                            <a class="btn btn-success" href="#">导出</a>
+
                                        </div>
                                    </div>
+
 
                                </form>
                            </div>
                             <div class="content">
-                                <table class="ui-table table-order-list">
-                                    <thead>
-                                    <tr>
-                                        <th class="oid">订单号</th>
-                                        <th class="warehouse">仓库</th>
-                                        <th class="people">收货人</th>
-                                        <th class="name">名称</th>
-                                        <th class="phone">手机</th>
-                                        <th class="time">接单时间</th>
-                                        <th class="posttime">发货时间</th>
-                                        <th class="state">订单状态</th>
-                                        <th class="action">操作</th>
-                                    </tr>
-                                    </thead>
-
-                                </table>
+                                <iframe frameborder="0" height="700" marginheight="0" marginwidth="0" scrolling="no" width="990" src="./sku-map.html"></iframe>
                             </div>
                        </div>
                    </div>
                </div>
-               <!--table end-->
-
-              <div class="mod-no-result">
-                  <div class="content">
-                      <p class="no-result">抱歉！无符合条件的查询结果。请修改查询条件，重新搜索！</p>
-                  </div>
-              </div>
+               <!-- end-->
 
 
 
@@ -155,6 +143,6 @@
 
      </div>
 
-    <script src="../static/js/pages/order.js"></script>
+    <script src="../static/js/pages/data.js"></script>
 </body>
 </html>
