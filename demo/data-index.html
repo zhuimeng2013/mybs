@@ -92,36 +92,84 @@
                                      </div>
                                  </div>
 
-                                 <div class="mod-detail">
+                                 <div class="mod-detail" id="mod-detail">
                                      <div class="header">
                                         <h3 class="title">数据详情</h3>
                                         <div class="action">
                                            <span>2013-05-01至2013-05-31</span>
-                                            <button class="btn btn-primary" type="button">最近7天</button>
-                                            <button class="btn btn-primary" type="button">最近30天</button>
+                                            <button class="btn btn-primary" type="button" data-url="./data-detail-day7.json">最近7天</button>
+                                            <button class="btn btn-primary" type="button" data-url="./data-detail.json">最近30天</button>
                                             <select class="select-date">
-                                                <option>2013-06</option>
-                                                <option>2013-07</option>
-                                                <option>2013-08</option>
+                                                <option value="./data-detail.json">2013-06</option>
+                                                <option value="./data-detail-day7.json">2013-07</option>
+                                                <option value="./data-detail.json">2013-08</option>
                                             </select>
                                         </div>
                                      </div>
                                      <div class="content">
-                                         <table>
-                                             <thead>
-                                                <tr>
-                                                    <th>&nbsp;</th>
-                                                    <th class="t2">近1天</th>
-                                                    <th class="t3">2013-05</th>
-                                                    <th class="t4">与上个月/2013-04对比</th>
-                                                </tr>
-                                             </thead>
-                                         </table>
+                                         <div id="mod-detail-table-container" data-url="./data-detail.json"></div>
+
+                                     </div>
+                                 </div>
+
+                                 <div class="mod-detail-chart">
+                                     <div class="content">
+                                         <div id="trend-chart" data-url="./trend.json">
+
+                                         </div>
                                      </div>
                                  </div>
                              </div>
                             <div class="grid-sub">
-
+                                <div class="mod-live">
+                                    <div class="header">
+                                       <span>(12:20:90更新)</span>
+                                    </div>
+                                    <div class="content">
+                                         <ul>
+                                             <li class="first">
+                                                 已接单：<span>3,889</span>
+                                             </li>
+                                             <li>
+                                                 已订单：<span>3,889</span>
+                                             </li>
+                                             <li>
+                                                 已拣货：<span>3,889</span>
+                                             </li>
+                                             <li>
+                                                 已验货：<span>3,889</span>
+                                             </li>
+                                             <li>
+                                                 已称重：<span>3,889</span>
+                                             </li>
+                                             <li>
+                                                 已发货：<span>3,889</span>
+                                             </li>
+                                         </ul>
+                                    </div>
+                                </div>
+                                <div class="mod-enters">
+                                    <div class="item">
+                                        <a href="">
+                                            <img src="../static/img/pages/data/kucun.jpg" width="269" height="103"/>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="">
+                                            <img src="../static/img/pages/data/shuju.jpg" width="269" height="103"/>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="">
+                                            <img src="../static/img/pages/data/sku.jpg" width="269" height="103"/>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="">
+                                            <img src="../static/img/pages/data/order.jpg" width="269" height="103"/>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                        </div>
                    </div>
@@ -148,7 +196,8 @@
           </div>
 
      </div>
-
+     <script src="../static/plugins/highcharts/highcharts.js"></script>
+     <script src="../static/plugins/highcharts/modules/exporting.js"></script>
     <script src="../static/js/pages/data.js"></script>
 </body>
 </html>
