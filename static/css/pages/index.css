@@ -4,26 +4,26 @@
 }
 .mod-feature-list li{
     float: left;
-    width: 230px;
-    height: 260px;
-    border:1px solid #e4e4e4;
+    width: 266px;
+    height: 280px;
     _display: inline;
     list-style: none;
     padding:0px;
     margin: :0px;
-    margin-left: 100px;
+    margin-left: 70px;
 }
 .mod-feature-list li a{
     display: block;
-    width:230px;
-    height:260px;
-    position: relative;
+    width:266px;
+    height:280px;
+    overflow: hidden;
 }
 .mod-feature-list li span{
     display: block;
     position:absolute;
     top:200px;
     left:80px;
+    display: none;
 }
 .mod-feature-list li.order{
      margin-left: 27px;
