@@ -70,10 +70,11 @@ jQuery(function($){
 
                         html.push('<td><span class="">'+item[k].num+'</span></td>');
 
-                    }else{
-
+                    }else if(item[k].state=='down'){
                         html.push('<td><span class="decline">'+item[k].num+'</span></td>');
-                    }
+                    }else{
+						 html.push('<td><span class="nochange">'+item[k].num+'</span></td>');
+					}
                 }else{
                     if(k==0){
                         html.push('<td>'+item[k]+'</td>');

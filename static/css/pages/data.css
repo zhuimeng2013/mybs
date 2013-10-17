@@ -113,10 +113,10 @@
     background: transparent url("../../img/pages/data/trend.png") no-repeat 14px -76px;
 }
 .mod-detail table td span.decline{
-    background-position: 17px -37px;
+    background-position: 14px -37px;
 }
 .mod-detail table td span.nochange{
-    background-position: -24px -93px;
+    background-position: -27px -93px;
 }
 
 .mod-detail-chart{
