@@ -110,11 +110,15 @@
 .mod-detail table td span{
     padding-left: 30px;
     color:#333;
-    background: transparent url("../../img/pages/data/trend.gif") no-repeat 14px 2px;
+    background: transparent url("../../img/pages/data/trend.png") no-repeat 14px -76px;
 }
 .mod-detail table td span.decline{
-    background-position: 14px -44px;
+    background-position: 17px -37px;
 }
+.mod-detail table td span.nochange{
+    background-position: -24px -93px;
+}
+
 .mod-detail-chart{
     height: 400px;
     margin-bottom: 32px;
