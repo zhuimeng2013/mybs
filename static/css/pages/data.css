@@ -118,6 +118,10 @@
 .mod-detail table td span.nochange{
     background-position: -27px -93px;
 }
+.mod-detail .select-date{
+	height:25px;
+	line-height:25px;
+}
 
 .mod-detail-chart{
     height: 400px;

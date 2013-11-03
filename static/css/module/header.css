@@ -17,12 +17,15 @@ a:focus {
     color: #ff0017;
     text-decoration: underline;
 }
-
+#header{
+	background-color:#efefef;
+}
 .mod-masthead{
-    height: 66px;
+    height: 56px;
     overflow:hidden;
     position: relative;
-    margin-top: 8px;
+	padding-top:8px;
+
 }
 .mod-masthead span.admin{
     position:absolute;

@@ -7,9 +7,19 @@
     overflow:hidden;
     padding-top: 12px;
 }
-
+.mod-guide .breadcrumb{
+    background-color:transparent;
+    padding-left:0px;
+    margin-left:0px;
+}
 .mod-cys-filter{
-
+	font-size:12px;
+}
+.mod-cys-filter .form-horizontal  input,
+.mod-cys-filter .form-horizontal  button,
+.mod-cys-filter .form-horizontal  select,
+.mod-cys-filter .form-horizontal  .btn-success{
+	font-size:12px;
 }
 .mod-cys-filter .form-horizontal{
     padding-top: 20px;

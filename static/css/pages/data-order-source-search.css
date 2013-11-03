@@ -7,9 +7,21 @@
     overflow:hidden;
     padding-top: 12px;
 }
+.mod-guide .breadcrumb{
+    background-color:transparent;
+    padding-left:0px;
+    margin-left:0px;
+}
 
 .mod-order-source-filter{
-
+	font-size:12px;
+}
+.mod-order-source-filter .help-inline,
+.mod-order-source-filter .form-horizontal  input,
+.mod-order-source-filter .form-horizontal  button,
+.mod-order-source-filter .form-horizontal  select,
+.mod-order-source-filter .form-horizontal  .btn-success{
+	font-size:12px;
 }
 .mod-order-source-filter .form-horizontal{
     padding-top: 20px;

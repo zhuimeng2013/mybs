@@ -6,6 +6,12 @@
     font-size: 14px;
     overflow:hidden;
     padding-top: 12px;
+	margin-top:6px;
+}
+.mod-guide .header .breadcrumb{
+	background-color:transparent;
+	margin-left:0px;
+	padding-left:0px;
 }
 
 .mod-store-filter{
@@ -19,13 +25,26 @@
 }
 .mod-store-filter .form-horizontal select{
     width: 128px;
+		font-size:12px;
+			height:25px;
+	line-height:25px;
 }
 .mod-store-filter .form-horizontal input{
     width: 100px;
+	font-size:12px;
+	height:19px;
+	line-height:19px;
 }
 .mod-store-filter .form-horizontal .field{
     width: 242px;
     float: left;
+	font-size:12px;
+}
+.mod-store-filter .form-horizontal  button{
+	font-size:12px;
+}
+.mod-store-filter .form-horizontal  .btn-success {
+	font-size:12px;
 }
 
 .table-store-list{

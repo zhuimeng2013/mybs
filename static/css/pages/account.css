@@ -32,3 +32,46 @@
     background: transparent url(../../img/pages/icon-no-result.png) no-repeat 140px 42px;
     padding-left: 180px;
 }
+.mod-set{
+	color:#4f526a;
+}
+.mod-set .header{
+	height:40px;
+	line-height:40px;
+	width:784px;
+	border-bottom:1px solid #ccc;
+	margin:0 auto;
+	margin-bottom:20px;
+}
+.mod-set .header h2{
+    font-size:18px;
+	color:#4f526a;
+}
+.mod-set .control-label span{
+	color:#c00;
+	padding-right:4px;
+}
+
+.mod-member-show{
+	color:#4f526a;
+}
+
+.mod-member-show .info-show{
+	width:784px;
+}
+.mod-member-show .info-show td{
+	height:50px;
+	border-bottom:1px solid #ccc;
+	padding-left:20px;
+}
+.mod-member-show .info-show td.field{
+	width:130px;
+	text-align:right;
+}
+.mod-member-show .info-show td a:link,
+.mod-member-show .info-show td a:visited{
+	color:#447bd6;
+}
+
+
+

@@ -1,11 +1,20 @@
 .order-filter{
-
+	font-size:12px;
 }
 .order-filter .form-horizontal{
     padding-top: 20px;
 }
 .order-filter .form-horizontal .label-order-id{
     width:78px;
+	font-size:12px;
+}
+.order-filter .form-horizontal  input,
+.order-filter .form-horizontal  button,
+.order-filter .form-horizontal  .btn-success{
+	font-size:12px;
+}
+.order-filter .form-horizontal  select{
+	font-size:12px;
 }
 .order-filter .form-horizontal  .controls{
     margin-left: 78px;
