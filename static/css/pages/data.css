@@ -17,11 +17,11 @@
     height: 122px;
     overflow: hidden;
     padding-left: 170px;
-    background: transparent url(../../img/pages/gaikuang.png) no-repeat 0px 0px;
+    background: transparent url(../../img/pages/gaikuang.gif) no-repeat 0px 0px;
+	color:#fff;
 }
 .mod-overview .header{
     font-size: 16px;
-    color: #9c9c9e;
     padding-top: 30px;
     height:30px;
 }
@@ -30,6 +30,7 @@
 }
 .mod-overview table{
     width:540px;
+	font-size:12px;
 }
 .mod-overview table .c1{
     width: 190px;
@@ -38,8 +39,9 @@
     width: 190px;
 }
 .mod-overview table em{
-    color:#ff7300;
+    color:#fff;
     font-style: normal;
+	font-weight:bold;
 }
 .mod-detail{
     height: 320px;
