@@ -2,6 +2,14 @@ jQuery(function($){
 
     //看数据首页-数据详情
 
+    if($(".datepicker").length>0){
+        $(".datepicker").datepicker({
+            altFormat: "yyyyy-mm-dd",
+            appendText:"yyyy-mm-dd",
+            dateFormat: "yy-mm-dd"
+        });
+    }
+
     if($("#mod-detail-table-container")[0]){
 
 
