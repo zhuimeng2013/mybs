@@ -12,9 +12,10 @@
     margin: :0px;
     margin-left: 74px;
     border:1px solid #e6e5e5;
+
 }
 .mod-feature-list li:hover{
-
+    background-color: #e6e6e6;
 }
 .mod-feature-list li a{
     display: block;

@@ -28,14 +28,14 @@ a:focus {
 
 }
 .mod-masthead span.admin{
-    position:absolute;
+    position: absolute;
     display: block;
-    height:42px;
-    left:222px;
-    top:5px;
-    border-left:1px solid #000;
+    height: 42px;
+    left: 198px;
+    top: 14px;
+    border-left: 1px solid #000;
     padding-left: 18px;
-    font-size: 32px;
+    font-size: 25px;
     line-height: 42px;
-    color:#000;
+    color: #000;
 }
