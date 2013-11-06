@@ -19,7 +19,10 @@
 .mod-password-update .btn,
 .mod-add-member .btn{
     padding: 10px 40px;
-    margin-right: 20px;
+    margin-left: 380px;
+    +margin-left: 200px;
+    float: left;
+    _display: inline;
 }
 .mod-add-member .control-group-fixed{
     margin-bottom: 4px;
@@ -48,9 +51,14 @@
 }
 .mod-password-update   .control-label{
     width:400px;
+    float: left;
+    line-height: 23px;
+    text-align: right;
 }
 .mod-password-update  .controls{
-    margin-left: 410px;
+    margin-left:10px;
+    float: left;
+    _display: inline;
 }
 .mod-password-update .form-horizontal{
     margin-top: 20px;

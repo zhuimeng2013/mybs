@@ -19,23 +19,41 @@ a:focus {
 }
 #header{
 	background-color:#efefef;
+    height: 62px;
+}
+#header .grid{
+
 }
 .mod-masthead{
-    height: 56px;
+    height: 60px;
     overflow:hidden;
+    width: 100%;
     position: relative;
-	padding-top:8px;
+}
 
+.mod-masthead img{
+    display: block;
+    width: 174px;
+    height: 55px;
+    float:left;
+    margin: 0px;
+    padding: 0px;
+}
+.mod-masthead a{
+    display: block;
+    width: 174px;
+    height: 55px;
+    overflow: hidden;
 }
 .mod-masthead span.admin{
     position: absolute;
     display: block;
-    height: 42px;
+    height: 36px;
     left: 198px;
     top: 14px;
-    border-left: 1px solid #000;
+    border-left: 1px solid #ccc;
     padding-left: 18px;
     font-size: 25px;
-    line-height: 42px;
-    color: #000;
+    line-height:36px;
+    color: #222;
 }

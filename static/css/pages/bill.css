@@ -30,7 +30,7 @@
 .mod-bill-nav li.active a:link,
 .mod-bill-nav li.active a:visited{
     color:#535956;
-		font-weight:bold;
+	font-weight:bold;
 }
 
 .mod-guide{
@@ -56,6 +56,8 @@
 }
 .mod-order-source-filter .form-horizontal  .controls{
     margin-left: 0px;
+    float: left;
+    padding-left: 0px;
 }
 
 .mod-order-source-filter .form-horizontal .field{

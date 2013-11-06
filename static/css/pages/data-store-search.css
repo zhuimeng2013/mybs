@@ -20,8 +20,16 @@
 .mod-store-filter .form-horizontal{
     padding-top: 20px;
 }
+.mod-store-filter .form-horizontal  .control-group{
+
+}
 .mod-store-filter .form-horizontal  .controls{
     margin-left: 0px;
+    float: left;
+    padding: 0px;
+}
+.ui-datepicker-append{
+    display: none;
 }
 .mod-store-filter .form-horizontal select{
     width: 128px;

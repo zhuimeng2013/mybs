@@ -7,17 +7,36 @@
 .order-filter .form-horizontal .label-order-id{
     width:78px;
 	font-size:12px;
+    float: left;
+    padding-top: 5px;
+    height: 23px;
+    line-height: 23px;
 }
 .order-filter .form-horizontal  input,
 .order-filter .form-horizontal  button,
 .order-filter .form-horizontal  .btn-success{
 	font-size:12px;
 }
+.order-filter .form-horizontal  .btn-primary{
+    margin-left: 18px;
+}
 .order-filter .form-horizontal  select{
 	font-size:12px;
+    height: 30px;
+    line-height: 30px;
+    margin: -2px;
+}
+.ui-datepicker-append{
+    display: none;
+}
+.select-c{
+    border: 1px solid #ccc;
 }
 .order-filter .form-horizontal  .controls{
-    margin-left: 78px;
+    margin-left: 0px;
+    _display: inline;
+    padding-left: 0px;
+    float: left;
 }
 
 .table-order-list th.oid{

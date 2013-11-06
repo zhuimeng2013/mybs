@@ -21,14 +21,22 @@
 .mod-cys-filter .form-horizontal  .btn-success{
 	font-size:12px;
 }
+.mod-cys-filter .help-inline{
+    font-size: 12px;
+}
 .mod-cys-filter .form-horizontal{
     padding-top: 20px;
 }
 .mod-cys-filter .form-horizontal  .controls{
     margin-left: 0px;
+    float: left;
+    padding: 0px;
 }
 .mod-cys-filter .form-horizontal select{
     width: 128px;
+}
+.ui-datepicker-append{
+    display: none;
 }
 .mod-cys-filter.form-horizontal input{
     width: 100px;

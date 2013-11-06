@@ -28,8 +28,12 @@
 }
 .mod-order-source-filter .form-horizontal  .controls{
     margin-left: 0px;
+    float: left;
+    padding: 0px;
 }
-
+.ui-datepicker-append{
+    display: none;
+}
 .mod-order-source-filter .form-horizontal .field{
     width: 242px;
     float: left;
