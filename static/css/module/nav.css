@@ -1,5 +1,5 @@
 .layout-nav{
-    border-bottom:2px solid #ff0017;
+    border-bottom:2px solid #ffa000;
 	background-color:#efefef;
 }
 .mod-nav{
@@ -28,7 +28,7 @@
 	font-family: "微软雅黑","宋体",Arial;
 }
 .mod-nav li.active{
-    background-color: #ff0017;
+    background-color: #ffa000;
 }
 .mod-nav li.active a:link,
 .mod-nav li.active a:visited{

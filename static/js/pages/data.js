@@ -85,7 +85,7 @@ jQuery(function($){
 					}
                 }else{
                     if(k==0){
-                        html.push('<td>'+item[k]+'</td>');
+                        html.push('<td class="t">'+item[k]+'</td>');
                     }else{
 
                         html.push('<td><em>'+item[k]+'</em></td>');

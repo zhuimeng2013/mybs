@@ -1,23 +1,35 @@
 .data-container{
-
+    background-color: #fff;
+    zoom: 1;
+}
+.data-container:after{
+    content: '\20';
+    display: block;
+    overflow: hidden;
+    height: 0px;
+    clear: both;
+}
+#doc{
+   /* background-color: #1b4366;*/
 }
 
 .data-container .grid-main{
     float: left;
     width: 710px;
     min-height: 400px;
-    padding-top: 22px;
+    padding-top: 16px;
 }
 .data-container .grid-sub{
     float: right;
     width: 270px;
     min-height: 400px;
+    padding-top: 16px;
 }
 .mod-overview{
-    height: 122px;
+    height: 120px;
     overflow: hidden;
-    padding-left: 170px;
-    background: transparent url(../../img/pages/gaikuang.gif) no-repeat 0px 0px;
+    padding-left: 160px;
+    background: #ffbb42 url(../../img/pages/data/data.jpg) no-repeat 0px 0px;
 	color:#fff;
 }
 .mod-overview .header{
@@ -39,9 +51,14 @@
     width: 190px;
 }
 .mod-overview table em{
-    color:#fff;
     font-style: normal;
 	font-weight:bold;
+}
+.mod-overview table td{
+    color: #8d5f24;
+}
+.mod-overview table td em{
+    color: #e15a00;
 }
 .mod-detail{
     height: 320px;
@@ -102,8 +119,12 @@
     text-align: left;
     color: #868592;
     border:0 none;
-    font-weight: normal;
+    font-weight: bold
     height: 24px;
+}
+.mod-detail table td.t{
+    font-weight: bold;
+    color: #9999a5;
 }
 .mod-detail table td em{
     font-style: normal;
@@ -129,25 +150,27 @@
     height: 400px;
     margin-bottom: 32px;
     border-top:2px solid #d7d7d7;
-    background-color: #f3f3f3;
+    background-color: #2fb7b5;
+}
+.mod-live{
+    background-color: #2fb7b5;
 }
 .mod-live .header{
     height: 62px;
-    background: #fff5d1 url("../../img/pages/t.png");
-    color:#847a58;
+    background: transparent url("../../img/pages/data/ss.jpg") no-repeat 15px 20px;
+    color:#fff;
     position: relative;
-    width:280px;
-    margin-right: -10px;
+    width:270px;
 }
 .mod-live .header span{
     display: block;
     position: absolute;
     font-size: 14px;
-    left:168px;
-    top:17px;
+    left:46px;
+    top:23px;
 }
 .mod-live .content{
-    background-color: #fafafa;
+
 }
 .mod-live .content ul{
     margin: 0px;
@@ -158,15 +181,13 @@
     line-height: 32px;
     overflow: hidden;
     padding-left: 22px;
-    font-size: 14px;
-    color:#666;
+    font-size: 12px;
+    color:#155352;
     list-style: none;
     margin: 0px;
-    border-top:1px solid #f3f3f3;
-    background-color: #fff5d1;
 }
 .mod-live .content li span{
-    color:#ff7300;
+    color:#fff;
 }
 .mod-live .content li.first{
     border-top:0 none;

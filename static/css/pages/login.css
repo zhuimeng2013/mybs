@@ -5,11 +5,16 @@
 .mod-login{
     height: 380px;
     position: relative;
+    font-size: 12px;
+}
+.mod-login label,
+.mod-login input{
+    font-size: 12px;
 }
 .mod-login .login-box{
     position: absolute;
     top:40px;
-    right: 40px;
+    right: 20px;
     width: 286px;
     height: 387px;
 }
@@ -20,25 +25,47 @@
     overflow:hidden;
 }
 .mod-login .login-box form{
-    padding: 6px 14px;
+    padding: 3px 24px;
     color:#fff;
+}
+.mod-login .ui-form-content{
+    padding-left: 0px;
 }
 .mod-login .login-box form legend{
     color:#fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    height: 25px;
+    line-height: 21px;
+    width: 233px;
 }
 .ui-form-content{
     padding-left: 4px;
 }
 .mod-login .login-box form .btn{
     padding: 7px 12px;
-    width:220px;
+    width:234px;
+    margin-right: 0px;
 }
 .mod-login .login-box form .label{
     line-height: 15px;
     padding: 4px 8px;
 }
+.mod-login  #userName,
+.mod-login  #pwd{
+    width: 220px;
+}
 .mod-login .login-box form .label-error{
-     width: 200px;
+    margin: 10px auto 0 auto;
+    margin-left: 0px;
+    margin-bottom: 4px;
+    width: 202px;
+    padding: 5px 5px 5px 25px;
+    line-height: 1.3;
+    background: #ffffd0 url(../../img/pages/x.png) no-repeat 6px 6px;
+    display: block;
+    border: 1px solid #ffad77;
+    color: #f00;
 }
 
 .mod-about-bs{
@@ -50,29 +77,21 @@
 }
 .mod-about-bs dd.item{
     float:left;
-    width: 310px;
+    width: 306px;
     margin-left: 0px;
-    padding-left: 20px;
+    padding-left: 24px;
 }
 .mod-about-bs dd.item ul{
     margin-left: 0px;
 }
 .mod-about-bs dd.item li{
     line-height: 26px;
-    padding-left: 20px;
+    padding-left: 37px;
     list-style: none;
 }
 .mod-about-bs dd.item h2{
-    font-size: 16px;
+    font-size: 18px;
     color:#666;
     padding-left: 44px;
-}
-.mod-about-bs dd.item h2.data{
-    background: transparent url("../../img/pages/login-icon.gif") no-repeat 0px 0px
-}
-.mod-about-bs dd.item h2.monitor{
-    background: transparent url("../../img/pages/login-icon.gif") no-repeat 0px -66px;
-}
-.mod-about-bs dd.item h2.service{
-    background: transparent url("../../img/pages/login-icon.gif") no-repeat 2px -140px;
+    background: transparent url("../../img/pages/tj.png") no-repeat 0px 6px
 }

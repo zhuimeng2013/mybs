@@ -18,9 +18,9 @@
 }
 .mod-password-update .btn,
 .mod-add-member .btn{
-    padding: 10px 40px;
-    margin-left: 380px;
-    +margin-left: 200px;
+    padding: 6px 40px;
+    margin-left: 30px;
+    +margin-left: 20px;
     float: left;
     _display: inline;
 }
@@ -29,19 +29,27 @@
 }
 
 .mod-add-member  .controls{
-    margin-left: 108px;
+    margin-left: 90px;
+}
+.mod-add-member  input,
+.mod-add-member  label{
+    font-size: 12px;
 }
 .mod-add-member  .field-value{
-    line-height: 20px;
     padding-top: 5px;
-    margin-bottom: 30px;
-    padding-left: 30px;
+    padding-left: 20px;
+    border-bottom: 1px solid #ccc;
+    line-height: 44px;
+    font-size: 12px;
+}
+.mod-add-member  .field-value.hover{
+    background-color: #fffae2;
 }
 .mod-add-member  .field-value .item{
     padding-right: 30px;
 }
 .mod-add-member .control-label{
-    width:90px;
+    width:78px;
     text-align: left;
     padding-left: 10px;
 }
@@ -50,15 +58,24 @@
 
 }
 .mod-password-update   .control-label{
-    width:400px;
+    width:140px;
     float: left;
     line-height: 23px;
     text-align: right;
+    font-size: 12px;
+}
+.mod-password-update   .control-label span{
+    font-size: 12px;
+    color: #c00;
+    padding-right: 3px;
 }
 .mod-password-update  .controls{
     margin-left:10px;
     float: left;
     _display: inline;
+}
+.mod-password-update  .controls input{
+    font-size: 12px;
 }
 .mod-password-update .form-horizontal{
     margin-top: 20px;
@@ -68,5 +85,8 @@
 }
 .mod-password-update .hide{
     display: none;
+}
+.mod-password-update .btn{
+    margin-left: 90px;
 }
 
