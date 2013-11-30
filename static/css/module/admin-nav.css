@@ -1,6 +1,6 @@
 .layout-nav{
     border-bottom:2px solid #08c;
-    margin-top: 10px;
+    background-color: #EFEFEF;
 }
 .mod-nav{
     height: 40px;
@@ -8,6 +8,7 @@
 .mod-nav ul{
     margin:0px;
     margin-left: 16px;
+    float: right;
 }
 .mod-nav li{
     float: left;

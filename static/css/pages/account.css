@@ -60,6 +60,7 @@
 }
 .mod-set  .btn{
     padding:8px 20px;
+    margin-right: 12px;
 }
 .mod-member-show{
 	color:#4f526a;
@@ -78,7 +79,7 @@
 }
 .mod-member-show .info-show td{
 	height:36px;
-	border-bottom:1px solid #ccc;
+	border-bottom:1px solid #F0F0F0;
 	padding-left:20px;
 }
 .mod-member-show .info-show td.field{

@@ -14,12 +14,24 @@ jQuery(function($){
     function bindDelEvent(){
         container.on('click','a.action-del',function(e){
             e.preventDefault();
-            var mid = $(this).data("mid");
+           /*var mid = $(this).data("mid");
             var tr = $(this).closest("tr");
             delModale.modal('show').on('shown',function(){
                 delModale.data('mid',mid);
                 delModale.data('tr',tr);
-            });
+            });*/
+            var b = window.confirm("确定要删除?");
+            var _this = $(this);
+            if(b){
+                //这里要做个信息的提交
+                _this.closest('tr').css('backgroundColor',"#da4f49");
+                _this.closest('tr').fadeOut('slow', function() {
+                    _this.closest('tr').remove();
+                });
+                return true;
+            }else{
+                return false;
+            }
         });
 
         delModale.bind("action.del",function(e,data){
@@ -32,12 +44,21 @@ jQuery(function($){
     function bindPasswordInitEvent(){
         container.on('click','a.action-pwd-init',function(e){
             e.preventDefault();
-            var mid = $(this).data("mid");
+            /*var mid = $(this).data("mid");
             var tr = $(this).closest("tr");
             pwdInitModel.modal('show').on('shown',function(){
                 pwdInitModel.data('mid',mid);
                 pwdInitModel.data('tr',tr);
-            });
+            });*/
+            var _this = this;
+            var b = window.confirm("确定要初始化密码?");
+            if(b){
+                //这里要做个信息的提交
+               $(_this).html('初始化完成').css("backgroundColor","#5eb95e").css('color',"#fff");
+                return true;
+            }else{
+                return false;
+            }
         });
 
         pwdInitModel.bind("action.pwdinit",function(e,data){

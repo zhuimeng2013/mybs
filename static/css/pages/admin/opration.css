@@ -16,6 +16,9 @@
     list-style: none;
     padding-left: 10px;
 }
+.mod-add-member{
+    margin-bottom: 140px;
+}
 .mod-password-update .btn,
 .mod-add-member .btn{
     padding: 6px 40px;
@@ -35,10 +38,13 @@
 .mod-add-member  label{
     font-size: 12px;
 }
+.mod-add-member .control-group-action{
+    padding-top: 20px;
+}
 .mod-add-member  .field-value{
     padding-top: 5px;
     padding-left: 20px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #eee;
     line-height: 44px;
     font-size: 12px;
 }
@@ -56,6 +62,9 @@
 .mod-add-member .control-group-fixed .control-label{
     width:300px;
 
+}
+.mod-password-update{
+    margin-bottom: 100px;
 }
 .mod-password-update   .control-label{
     width:140px;
