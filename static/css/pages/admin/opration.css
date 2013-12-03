@@ -95,7 +95,9 @@
 .mod-password-update .hide{
     display: none;
 }
-.mod-password-update .btn{
-    margin-left: 90px;
+.mod-password-update .btn-primary{
+    margin-left: 140px;
+    padding-right: 24px;
+    padding-left: 24px;
 }
 

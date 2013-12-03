@@ -21,6 +21,10 @@ a:focus {
 	background-color:#efefef;
     height: 62px;
 }
+#header.header-login{
+    border-bottom: 2px solid #08C;
+    height: 80px;
+}
 #header .grid{
 
 }
@@ -53,7 +57,8 @@ a:focus {
     top: 14px;
     border-left: 1px solid #ccc;
     padding-left: 18px;
-    font-size: 20px;
+    font-size: 24px;
     line-height:36px;
     color: #222;
+    font-family: 'microsoft yahei', Verdana, Arial, Helvetica, sans-serif;
 }
