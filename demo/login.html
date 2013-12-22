@@ -10,7 +10,7 @@
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/header.css">
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/footer.css">
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/login.css">
-    <script src="../static/js/lib/lib.js"></script>
+    <script src="../static/js/lib/jquery-1.8.3.min.js"></script>
     <base target="_self"/>
 </head>
 <body>
@@ -35,31 +35,47 @@
          </div>
           <div class="content" id="content">
                <div class="layout layout-banner">
-                   <div class="grid">
-                       <div class="mod-login">
-                            <div class="content">
-                                <div class="login-box">
-                                    <div class="wrap clearfix">
-                                        <form action="" method="post" id="login-form" class="ui-form">
-                                            <fieldset>
-                                                <legend>用户登录</legend>
-                                                <div class="ui-form-content">
-                                                    <span class="label-error" id="label-error-box"><span class="info">请输入用户名</span></span>
-                                                    <label for="userName">用户名：</label>
-                                                    <input type="text" placeholder="请输入用户名" name="userName" id="userName">
-                                                    <label for="pwd">密码：</label>
-                                                    <input type="password" placeholder="请输入密码" name="password" id="pwd">
-                                                    <span class="label label-important hide" id="label-pwd">请输入密码。</span>
-                                                    <label class="checkbox">
-                                                        <input type="checkbox">记住用户名
-                                                    </label>
-                                                    <button type="submit" class="btn btn-block btn-primary">登录</button>
-                                                </div>
-                                            </fieldset>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+                   <div class="mod-login">
+                       <div class="content">
+                           <div class="login-box">
+                               <div class="wrap clearfix">
+                                   <form action="" method="post" id="login-form" class="ui-form">
+                                       <fieldset>
+                                           <legend>用户登录</legend>
+                                           <div class="ui-form-content">
+                                               <span class="label-error" id="label-error-box"><span class="info">请输入用户名</span></span>
+                                               <label for="userName">用户名：</label>
+                                               <input type="text" placeholder="请输入用户名" name="userName" id="userName">
+                                               <label for="pwd">密码：</label>
+                                               <input type="password" placeholder="请输入密码" name="password" id="pwd">
+                                               <span class="label label-important hide" id="label-pwd">请输入密码。</span>
+                                               <label class="checkbox">
+                                                   <input type="checkbox">记住用户名
+                                               </label>
+                                               <button type="submit" class="btn btn-block btn-primary">登录</button>
+                                           </div>
+                                       </fieldset>
+                                   </form>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                    <ul class="j-slide">
+                        <li class="f-tab-b slide current" data-seed="1" style="opacity: 1;">
+                            <div class="bg bg-1" style="background-image: url(../static/img/banner1.jpg);"></div>
+                        </li>
+                        <li class="f-tab-b slide" data-seed="2" >
+                            <div class="bg" style="background-image: url(../static/img/banner2.jpg);"></div>
+                        </li>
+                        <li class="f-tab-b slide" data-seed="3" >
+                            <div class="bg" style="background-image: url(../static/img/banner3.jpg);"></div>
+                        </li>
+                    </ul>
+                   <div class="slide-number-box">
+                       <div id="J-slide-number" class="slide-number">
+                           <a href="#" hidefocus="true" data-seed="1" class="f-tab-t slide-number-active">1</a>
+                           <a href="#" hidefocus="true" data-seed="2" class="f-tab-t">2</a>
+                           <a href="#" hidefocus="true" data-seed="3" class="f-tab-t">3</a>
                        </div>
                    </div>
                </div>
@@ -135,7 +151,6 @@
                     </div>
                 </div>
           </div>
-
      </div>
     <script src="../static/js/pages/login.js"></script>
 </body>
