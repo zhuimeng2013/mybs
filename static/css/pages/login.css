@@ -129,28 +129,37 @@
     top:40px;
     right: 20px;
     width: 286px;
-    height: 387px;
+    height: 300px;
 }
 .mod-login .login-box .wrap{
     background:rgba(0,0,0,0.4);
     filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#66000000',EndColorStr='#66000000')
     width:287px;
     overflow:hidden;
+    margin: 0px;
+    padding: 0px;
 }
 .mod-login .login-box form{
-    padding: 3px 24px;
+    padding: 0px 24px;
     color:#fff;
+    margin: 0 0 20px;
+}
+.mod-login .login-box form fieldset{
+    margin: 0px;
+    padding: 0px;
+    display: block;
 }
 .mod-login .ui-form-content{
     padding-left: 0px;
 }
 .mod-login .login-box form legend{
     color:#fff;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
-    height: 25px;
-    line-height: 21px;
+    height: 32px;
+    line-height: 32px;
     width: 233px;
+    padding-top: 10px;
 }
 .ui-form-content{
     padding-left: 4px;
